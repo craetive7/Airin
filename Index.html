@@ -1867,7 +1867,6 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
         </div>
     </div>
 
-
     <script>
         // Animasi Scroll Reveal
         function reveal() {
@@ -2021,27 +2020,6 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
             }
         }
 
-        // Logic Download HTML
-        function downloadHTML() {
-            // Mengambil keseluruhan dokumen HTML
-            const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
-            
-            // Membuat Blob dari string HTML
-            const blob = new Blob([htmlContent], { type: 'text/html' });
-            
-            // Membuat elemen link sementara
-            const a = document.createElement('a');
-            a.href = URL.createObjectURL(blob);
-            a.download = 'airin_landing_page.html'; // Nama file yang akan diunduh
-            
-            // Memicu klik untuk unduhan
-            document.body.appendChild(a);
-            a.click();
-            
-            // Membersihkan elemen & URL object
-            document.body.removeChild(a);
-            URL.revokeObjectURL(a.href);
-        }
     </script>
 
 </body></html>
